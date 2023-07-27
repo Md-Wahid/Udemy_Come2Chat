@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\ChatApp\\UdemySimpleChatApp\\API\\API.csproj": {}
+    "f:\\Projects\\ChatApp\\Udemy_Come2Chat\\API\\API.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\ChatApp\\UdemySimpleChatApp\\API\\API.csproj": {
+    "f:\\Projects\\ChatApp\\Udemy_Come2Chat\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\ChatApp\\UdemySimpleChatApp\\API\\API.csproj",
+        "projectUniqueName": "f:\\Projects\\ChatApp\\Udemy_Come2Chat\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "F:\\Projects\\ChatApp\\UdemySimpleChatApp\\API\\API.csproj",
+        "projectPath": "f:\\Projects\\ChatApp\\Udemy_Come2Chat\\API\\API.csproj",
         "packagesPath": "C:\\Users\\mdwah\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\ChatApp\\UdemySimpleChatApp\\API\\obj\\",
+        "outputPath": "f:\\Projects\\ChatApp\\Udemy_Come2Chat\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,8 +25,6 @@
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,6 +46,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
