@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
   profileForm: FormGroup = new FormGroup({});
   apiErrorMessages: string[] = [];
 
+  openChat = true;
+
   constructor(private formBuilder: FormBuilder, private chatService: ChatService){}
 
   ngOnInit(): void {
@@ -32,15 +34,23 @@ export class HomeComponent implements OnInit {
     if(this.userForm.valid){
       this.chatService.registerUser(this.userForm.value).subscribe({
         next: () => {
-          console.info('open chat');
+          this.chatService.myName = this.userForm.get('name')?.value;
+          this.openChat = true;
+          this.userForm.reset();
+          this.submitted = false;
         },
         error : error => {
           if(typeof(error.error) !== 'object'){
             this.apiErrorMessages.push(error.error);
+            this.openChat = false;
           }
         }
       })
     }
+  }
+
+  closeChat(){
+    this.openChat = false;
   }
 
 }
